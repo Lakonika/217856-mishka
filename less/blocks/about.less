@@ -1,0 +1,136 @@
+.about {
+  margin: auto;
+
+  &__title {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  &__features {
+    padding-left: 0;
+    font-size: 17px;
+    font-weight: bold;
+    list-style: none;
+  }
+
+  &__icon {
+    display: block;
+    width: 60px;
+    height: 40px;
+  }
+
+  &__icon--eco {
+    background: url("../img/icon-feature-1.svg") no-repeat 0 0;
+  }
+
+  &__icon--price {
+    background: url("../img/icon-feature-3.svg") no-repeat 0 0;
+  }
+
+  &__icon--promo {
+    background: url("../img/icon-feature-5.svg") no-repeat 0 0;
+  }
+
+  &__icon--handmade {
+    background: url("../img/icon-feature-2.svg") no-repeat 0 0;
+  }
+
+  &__icon--patriot {
+    background: url("../img/icon-feature-4.svg") no-repeat 0 0;
+  }
+
+  &__icon--pack {
+    background: url("../img/icon-feature-6.svg") no-repeat 0 0;
+  }
+}
+
+  @media @mobile-widths-only {
+    .about {
+      width: 260px;
+      margin: 75px auto 60px;
+
+      &__title {
+        line-height: 20px;
+      }
+
+      &__item {
+        box-sizing : border-box;
+        margin: 20px 0 30px;
+      }
+
+      &__item:first-child {
+        margin-top: 35px;
+      }
+
+      &__icon {
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+
+  @media @tablet-widths {
+    .about {
+      width: 668px;
+      margin: 60px auto 0;
+
+      &__title {
+        font-size: 43px;
+      }
+
+      &__features {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 20px;
+        column-count: 2;
+      }
+
+      &__item {
+        margin-right: auto;
+        padding-bottom: 55px;
+      }
+
+      &__item:nth-child(3),
+      &__item:nth-child(6) {
+        padding-bottom: 37px;
+      }
+
+      &__item:nth-child(5) {
+        margin-left: -5px;
+        padding-bottom: 60px;
+      }
+
+      &__icon {
+        margin: 0 0 10px 0;
+      }
+
+      &__icon--price {
+        margin: 0 0 15px 5px;
+      }
+
+      &__icon--promo {
+        margin: 10px 0 5px 10px;
+      }
+    }
+  }
+
+  @media @desktop-widths {
+    .about {
+      margin: 70px auto 0;
+
+      &__title {
+        margin-bottom: 43px;
+        font-size: 53px;
+      }
+
+      &__features {
+        margin-bottom: 10px;
+      }
+
+      &__item:nth-child(3),
+      &__item:nth-child(6) {
+        padding-bottom: 30px;
+      }
+    }
+  }

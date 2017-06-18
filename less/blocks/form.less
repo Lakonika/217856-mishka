@@ -1,0 +1,94 @@
+.form {
+  margin: auto;
+
+  & p {
+  }
+
+  &__title {
+    width: auto;
+    margin: auto;
+    background: @light-grey;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+@media @mobile-widths-only {
+  .form {
+    width: 260px;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0 30px;
+
+    &__title {
+      height: 180px;
+      margin-bottom: 20px;
+      background: @light-grey;
+      padding: 50px 0;
+    }
+
+    &__title h1 {
+      font-size: 27px;
+    }
+
+    & p {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .form {
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 50px;
+
+    &__title {
+      width: 100%;
+      margin-top: -50px;
+      margin-bottom: 125px;
+      padding: 67px 0 58px;
+      box-sizing: border-box;
+      border-top: 1px solid #ececec;
+    }
+
+    &__title h1 {
+      font-size: 43px;
+    }
+
+    &--decor {
+      height: 20px;
+      margin-top: -145px;
+      margin-bottom: 65px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+      background-size: 100%;
+      z-index: 10;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .form {
+    width: 700px;
+    margin: auto;
+    margin-top: 120px;
+
+    &__title {
+      width: 1150px;
+      height: 250px;
+      margin-top: -60px;
+      margin-bottom: 140px;
+      padding: 0;
+      padding-top: 55px;
+    }
+
+    &__title h1 {
+      font-size: 53px;
+    }
+
+    &--decor {
+      margin-top: -155px;
+    }
+  }
+}
