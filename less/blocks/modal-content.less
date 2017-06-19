@@ -1,0 +1,140 @@
+.modal-content {
+  display: none;
+
+  &__wrapper {
+    display: block;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    z-index: 10;
+    padding: 35px 9.375% 46px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    border-top: 1px solid #d2d2d2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  &__title {
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: auto;
+    margin-bottom: 32px;
+  }
+
+  &__choice {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__size {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__field {
+    display: block;
+    width: 33%;
+    height: 40px;
+    text-align: center;
+  }
+
+  &__field input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 60px;
+    height: 40px;
+    border-radius: 0;
+    border: 2px solid @brd-light-grey;
+    background: transparent;
+  }
+
+  &__field input[type="radio"]:hover + label::before {
+    border: 2px solid @brd-dark-grey;
+  }
+
+  &__field input[type="radio"]:checked + label::before {
+    border: 2px solid @light-green;
+  }
+
+  &__add {
+    width: 260px;
+    margin: auto;
+    height: 50px;
+    background-color: #63d1bb;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  &-show {
+    display: block;
+  }
+}
+
+@media @mobile-widths-only {
+  .modal-content__wrapper {
+    width: 100%;
+    height: 338px;
+    margin-top: -168px;
+  }
+}
+
+@media @tablet-widths {
+  .modal-content__wrapper {
+    width: 568px;
+    height: 340px;
+    left: 50%;
+    margin-left: -284px;
+    padding: 54px 108px;
+    border: 1px solid #ececec;
+  }
+
+  .modal-content__title {
+    width: 350px;
+  }
+
+  .modal-content__size {
+    width: 110px;
+  }
+
+  .modal-content__field input[type="radio"] + label::before {
+    width: 110px;
+    left: 0;
+  }
+
+  .modal-content__add {
+    width: 350px;
+  }
+}
+
+@media @desktop-widths {
+  .modal-content {
+    left: 26%;
+  }
+}
