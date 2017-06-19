@@ -37,11 +37,23 @@ module.exports = function(grunt) {
           processors: [
             require("autoprefixer")({browsers: ["last 2 versions"]}),
             require("css-mqpacker")({
-             sort: true
+              sort: true
             })
           ]
         },
         src: "build/css/*.css"
+      }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'build/css',
+          src: ['*.css', '!*.min.css'],
+          dest: 'build/css',
+          ext: '.min.css'
+        }]
       }
     },
 
@@ -88,16 +100,6 @@ module.exports = function(grunt) {
       }
     },
 
-    csso: {
-        options: {
-          report: "gzip"
-        },
-      files: {
-        "build/css/style.min.css": ["build/css/style.css"],
-        "css/style.min.css": ["css/style.css"]
-      }
-    },
-
     svgmin: {
       symbols: {
         files: [{
@@ -131,8 +133,8 @@ module.exports = function(grunt) {
     "copy",
     "less",
     "postcss",
+    "cssmin",
     "imagemin",
-    "csso",
     "svgmin",
     "svgstore"
   ]);
