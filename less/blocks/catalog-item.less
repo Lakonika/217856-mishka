@@ -16,6 +16,7 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
+    letter-spacing: 1px;
   }
 
   &__details {
@@ -44,19 +45,19 @@
     border: none;
     outline: none;
   }
-}
 
-.cart-icon {
-  background: url("../img/icon-cart.svg") no-repeat 0 0;
-  opacity: 0.5;
-
-  &:hover {
-    background-image: url("../img/icon-cart-green.svg");
-    opacity: 1;
-  }
-
-  &:active {
+  &--cart-icon {
+    background: url("../img/icon-cart.svg") no-repeat 0 0;
     opacity: 0.5;
+
+    &:hover {
+      background-image: url("../img/icon-cart-green.svg");
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
