@@ -1,0 +1,100 @@
+.main-menu {
+  position: relative;
+  margin: auto;
+
+  &__item {
+    height: 105px;
+    background-color: @light-green;
+    box-sizing: border-box;
+  }
+
+  &__item:nth-child(2) {
+    background-color: @green;
+  }
+
+  &__item--goods {
+    background: url("../img/icon-interior.svg") no-repeat center;
+  }
+
+  &__item--toys {
+    background: url("../img/icon-toy.svg") no-repeat center;
+  }
+
+  &__item-link {
+    display: block;
+    float: left;
+    width: 130px;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__item-img {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 70px;
+    opacity: 0.5;
+  }
+
+  &__item-img:hover {
+    opacity: 0.7;
+  }
+
+  &__item-img:active {
+    opacity: 0.3;
+  }
+}
+
+@media @mobile-widths-only {
+  .main-menu {
+    width: 320px;
+
+    &__item {
+      display: block;
+      width: 100%;
+      padding: 10px 20px 30px 30px;
+    }
+
+    &__item-img {
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .main-menu {
+    display: flex;
+    width: 668px;
+    margin: auto;
+    margin-top: -115px;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+      height: 125px;
+      padding: 10px 20px 30px 40px;
+    }
+
+    &__item-link {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__item-img {
+      margin-top: 18px;
+    }
+
+    &__item--toys {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .main-menu {
+    width: 1050px;
+  }
+}
