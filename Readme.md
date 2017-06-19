@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ольга Плохотнюк](https://up.htmlacademy.ru/adaptive/10/user/217856).
-* Наставник: `Без наставника`.
+* Студент: [Ольга Плохотнюк](https://up.htmlacademy.ru/adaptive/11/user/217856).
+* Наставник: `Неизвестно`.
 
 ---
 
@@ -9,8 +9,6 @@
 
 - [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
@@ -37,7 +35,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`.
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455689/2092071c-206d-11e6-883b-7a92865a0e1d.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306270/5e6b9eba-3efb-11e7-9817-0d6b7faa21b4.png">
 
 Клонировать репозиторий можно так:
 
