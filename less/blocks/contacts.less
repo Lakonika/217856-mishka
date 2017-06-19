@@ -1,0 +1,245 @@
+.contacts {
+  position: relative;
+  width: auto;
+  margin: auto;
+  margin-bottom: 40px;
+
+
+  &__title {
+    display: block;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__data {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__cell  {
+    height: 60px;
+  }
+
+  &__info {
+    width: 70%;
+    margin-left: 0;
+  }
+
+  &__mail {
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+    border-bottom:  2px solid @underline-green;
+  }
+
+  &__map {
+    width: auto;
+    height: 458px;
+    margin-bottom: 40px;
+  }
+
+  &__pin {
+    position: absolute;
+  }
+
+  &__write {
+    display: block;
+    margin: auto;
+    width: 260px;
+    height: 50px;
+    box-sizing: content-box;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+}
+
+@media @mobile-widths-only {
+  .contacts {
+    width: 320px;
+    padding-top: 5px;
+
+
+    &__title {
+      width: 260px;
+    }
+
+    &__data {
+      width: 260px;
+    }
+
+    &__cell  {
+      width: 30%;
+    }
+
+    &__info {
+      width: 70%;
+    }
+
+    &__map {
+      width: 320px;
+      background: url("../img/map-mobile@1x.jpg") no-repeat 0 0;
+
+      @media @retina {
+        background-image: url("../img/map-mobile@2x.jpg");
+      }
+    }
+
+    &__frame {
+      width: 320px;
+      height: 457px;
+    }
+
+    &__pin {
+      top: 55%;
+      left: 39%;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+    width: 768px;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &--flag {
+      display: block;
+      width: 60px;
+      height: 90px;
+      margin-right: 40px;
+      background: url("../img/icon-flag.svg") no-repeat 0 0;
+    }
+
+    &__title {
+      width: auto;
+      margin-left: 50px;
+      margin-right: auto;
+      font-size: 43px;
+    }
+
+    &__data {
+      margin: 30px auto 27px;
+      flex-wrap: nowrap;
+      width: 100%;
+      padding: 0 50px;
+      font-size: 17px;
+    }
+
+    &__cell  {
+      width: 22%;
+    }
+
+    &__map {
+      width: 768px;
+      margin-top: 25px;
+      text-align: center;
+      background-image: url("../img/map-tablet@1x.jpg");
+
+      @media @retina {
+        background-image: url("../img/map-tablet@2x.jpg");
+      }
+    }
+
+    &__frame {
+      width: 768px;
+      height: 457px;
+    }
+
+    &__pin {
+      top: 51%;
+      left: 46%;
+    }
+
+    &__write {
+      margin: auto;
+      margin-top: 15px;
+      width: 230px;
+      font-size: 17px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .contacts {
+    width: 1050px;
+    height: 460px;
+    margin-top: 140px;
+    margin-bottom: 120px;
+    padding-left: 175px;
+    box-sizing: border-box;
+
+    &--flag {
+      position: absolute;
+      top: 80px;
+      left: 65px;
+    }
+
+    &__title {
+      width: 100%;
+      height: 90px;
+      margin: 85px 0 0 0;
+      padding: 0;
+      font-size: 53px;
+    }
+
+    &__data {
+      width: 40%;
+      height: 150px;
+      flex-wrap: wrap;
+      margin: 18px auto 130px 0;
+      padding: 0;
+    }
+
+    &__cell {
+      width: 24%;
+      height: auto;
+      margin-bottom: 25px;
+    }
+
+    &__info {
+      width: 70%;
+      height: auto;
+    }
+
+    &__map {
+      position: absolute;
+      top: -5px;
+      right: 0;
+      width: 525px;
+      background-image: url("../img/map-desktop@1x.jpg");
+
+      @media @retina {
+        background-image: url("../img/map-desktop@2x.jpg");
+      }
+    }
+
+    &__pin {
+      top: 35%;
+      left: 45%;
+    }
+
+    &__frame {
+      width: 525px;
+      height: 457px;
+    }
+
+    &__write {
+      position: absolute;
+      bottom: -10px;
+      left: 175px;
+      margin: 0;
+    }
+  }
+}
