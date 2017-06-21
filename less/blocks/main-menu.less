@@ -1,66 +1,66 @@
 .main-menu {
   position: relative;
   margin: auto;
+}
 
-  &__item {
-    height: 105px;
-    background-color: @light-green;
-    box-sizing: border-box;
-  }
+.main-menu__item {
+  height: 105px;
+  background-color: @light-green;
+  box-sizing: border-box;
+}
 
-  &__item:nth-child(2) {
-    background-color: @green;
-  }
+.main-menu__item:nth-child(2) {
+  background-color: @green;
+}
 
-  &__item--goods {
-    background: url("../img/icon-interior.svg") no-repeat center;
-  }
+.main-menu__item--goods {
+  background: url("../img/icon-interior.svg") no-repeat center;
+}
 
-  &__item--toys {
-    background: url("../img/icon-toy.svg") no-repeat center;
-  }
+.main-menu__item--toys {
+  background: url("../img/icon-toy.svg") no-repeat center;
+}
 
-  &__item-link {
-    display: block;
-    float: left;
-    width: 130px;
-    font-size: 19px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-  }
+.main-menu__item-link {
+  display: block;
+  float: left;
+  width: 130px;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
 
-  &__item-img {
-    display: block;
-    float: right;
-    width: 60px;
-    height: 70px;
-    opacity: 0.5;
-  }
+.main-menu__item-img {
+  display: block;
+  float: right;
+  width: 60px;
+  height: 70px;
+  opacity: 0.5;
+}
 
-  &__item-img:hover {
-    opacity: 0.7;
-  }
+.main-menu__item-img:hover {
+  opacity: 0.7;
+}
 
-  &__item-img:active {
-    opacity: 0.3;
-  }
+.main-menu__item-img:active {
+  opacity: 0.3;
 }
 
 @media @mobile-widths-only {
   .main-menu {
     width: 320px;
+  }
 
-    &__item {
-      display: block;
-      width: 100%;
-      padding: 10px 20px 30px 30px;
-    }
+  .main-menu__item {
+    display: block;
+    width: 100%;
+    padding: 10px 20px 30px 30px;
+  }
 
-    &__item-img {
-      margin-right: 5px;
-      margin-top: 10px;
-    }
+  .main-menu__item-img {
+    margin-right: 5px;
+    margin-top: 10px;
   }
 }
 
@@ -71,25 +71,25 @@
     margin: auto;
     margin-top: -115px;
     flex-wrap: wrap;
+  }
 
-    &__item {
-      width: 50%;
-      height: 125px;
-      padding: 10px 20px 30px 40px;
-    }
+  .main-menu__item {
+    width: 50%;
+    height: 125px;
+    padding: 10px 20px 30px 40px;
+  }
 
-    &__item-link {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .main-menu__item-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
-    &__item-img {
-      margin-top: 18px;
-    }
+  .main-menu__item-img {
+    margin-top: 18px;
+  }
 
-    &__item--toys {
-      margin-right: 10px;
-    }
+  .main-menu__item--toys {
+    margin-right: 10px;
   }
 }
 
