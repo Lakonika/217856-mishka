@@ -27,6 +27,11 @@
   content: "";
 }
 
+.search-form__mail-legend::after {
+  left: 80px;
+  width: 180px;
+}
+
 .search-form__type {
   margin-bottom: 0;
 }
@@ -44,8 +49,8 @@
 .search-form__color input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: -13px;
+  left: -2px;
   width: 36px;
   height: 36px;
   background-color: white;
@@ -63,18 +68,13 @@
   font-weight: bold;
 }
 
-.search-form__name {
-  padding-top: 30px;
-  margin-bottom: 0;
-}
-
 .search-form__name-title {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   height: 60px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .search-form__data {
@@ -94,6 +94,7 @@
 .search-form__mail,
 .search-form__phone {
   position: relative;
+  padding: 0 0 15px 10px;
 }
 
 .search-form__img {
@@ -129,7 +130,7 @@
 .search-form__button {
   width: 260px;
   height: 53px;
-  margin: 10px auto 0;
+  margin: 15px auto 0;
   box-sizing: border-box;
   background-color: white;
   border: 2px solid black;
@@ -146,6 +147,7 @@
   .search-form {
     width: 320px;
     padding-left: 15px;
+    box-sizing: border-box;
   }
 
   .search-form h2 {
@@ -156,10 +158,20 @@
     width: 90%;
   }
 
+  .search-form__type {
+      padding: 0 0 0 15px;
+  }
+
+  .search-form__type-wrapper {
+    margin: -5px auto 10px;
+  }
+
   .search-form__type-title {
     display: flex;
     width: 200px;
     padding-left: 60px;
+    font-size: 17px;
+    line-height: 18px;
   }
 
   .search-form__type-title:last-of-type {
@@ -168,6 +180,7 @@
 
   .search-form__color {
     padding-bottom: 0;
+    padding: 10px 0 0 15px;
   }
 
   .search-form__color-title:last-of-type {
@@ -175,6 +188,7 @@
   }
 
   .search-form__name {
+    padding-top: 25px;
     padding-bottom: 0;
   }
 
@@ -183,17 +197,18 @@
   }
 
   .search-form__phone-legend h2 {
-    margin-bottom: 0;
+    margin: 5px auto 0;
   }
 
   .search-form__phone-legend::after {
+    top: 10px;
     right: 0;
     left: 64px;
     width: 198px;
   }
 
   .search-form__phone input {
-    height: 50px;
+    height: 55px;
   }
 
   .search-form__mail {
@@ -205,7 +220,7 @@
   }
 
   .search-form__mail input {
-    height: 50px;
+    height: 55px;
   }
 
   .search-form__img {
@@ -217,7 +232,7 @@
   }
 
   .search-form__extra-legend::after {
-    top: 0;
+    top: 5px;
   }
 
   .search-form__extra textarea {
@@ -231,6 +246,10 @@
   .search-form__send {
     width: 260px;
     margin: 0 auto 60px 15px;
+  }
+
+  .search-form__explic {
+    margin-top: 5px;
   }
 }
 
