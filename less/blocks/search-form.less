@@ -95,7 +95,6 @@
 .search-form__mail,
 .search-form__phone {
   position: relative;
-  padding: 0 0 15px 10px;
 }
 
 .search-form__img {
@@ -197,6 +196,11 @@
     margin-bottom: 27px;
   }
 
+  .search-form__mail,
+  .search-form__phone {
+    padding: 0 0 15px 10px;
+  }
+
   .search-form__phone-legend h2 {
     margin: 5px auto 0;
   }
@@ -267,6 +271,7 @@
     top: -12px;
     width: 50px;
     height: 50px;
+    background-color: @light-grey;
   }
 
   .search-form__color input[type="checkbox"]:nth-of-type(odd) + label::before {
@@ -441,8 +446,7 @@
 
   .search-form__button {
     width: 230px;
-    margin-left: 10px;
-    margin-right: auto;
+    margin: 10px auto 0 10px;
   }
 }
 
