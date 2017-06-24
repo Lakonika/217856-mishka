@@ -83,6 +83,7 @@
 
 @media @tablet-widths {
   .goods-item {
+    position: relative;
     width: 668px;
     min-height: 510px;
     margin: 0 auto;
@@ -150,6 +151,17 @@
   .goods-item__order-button {
     width: 290px;
   }
+
+  .goods-item::after {
+    content: "";
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x 0 0;
+    opacity: 0.7;
+  }
 }
 
 @media @desktop-widths {
@@ -205,4 +217,8 @@
     right: 0;
     z-index: 0;
   }
+
+    .goods-item::after {
+      bottom: -100px;
+    }
 }
