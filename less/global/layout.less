@@ -72,8 +72,13 @@ input[type="radio"] + label::before {
   border-radius: 50%;
 }
 
+input[type="radio"]:hover + label::before {
+  border: 2px solid @underline-green;
+}
+
 input[type="radio"]:checked + label::before {
   background: url("../img/checkbox.svg") no-repeat 10px 10px;
+  border: 2px solid @brd-grey;
 }
 
 input[type="checkbox"] {

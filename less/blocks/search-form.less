@@ -58,8 +58,13 @@
   border: 2px solid black;
 }
 
+.search-form__color input[type="checkbox"]:hover + label::before {
+  border: 2px solid @underline-green;
+}
+
 .search-form__color input[type="checkbox"]:checked + label::before {
   background: url("../img/icon-tick.svg") no-repeat 2px 4px;
+  border: 2px solid @brd-grey;
 }
 
 .search-form__color-title {
@@ -133,13 +138,22 @@
   margin: 18px auto 0;
   box-sizing: border-box;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid @brd-dark-grey;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: @brd-dark-grey;
   text-align: center;
+}
+
+.search-form__button:hover {
+  background-color: @brd-dark-grey;
+  color: white;
+}
+
+.search-form__button:active {
+    color: @grey;
 }
 
 @media @mobile-widths-only {

@@ -9,8 +9,26 @@
   box-sizing: border-box;
 }
 
+.main-menu__item:hover {
+  background-color: @hover-light-green;
+}
+
+.main-menu__item:active p,
+.main-menu__item:active span {
+  opacity: 0.3;
+}
+
 .main-menu__item:nth-child(2) {
   background-color: @green;
+}
+
+.main-menu__item:nth-child(2):hover {
+  background-color: @hover-green;
+}
+
+.main-menu__item:nth-child(2):active p,
+.main-menu__item:nth-child(2):active span {
+  opacity: 0.3;
 }
 
 .main-menu__item--goods {
