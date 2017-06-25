@@ -1,6 +1,10 @@
 .footer {
-  margin: auto;
+  width: 100%;
   background-color: #f1f1f1;
+}
+
+.footer__wrapper {
+  margin: auto;
 }
 
 .footer__social {
@@ -80,7 +84,7 @@
 }
 
 @media @mobile-widths-only {
-  .footer {
+  .footer__wrapper {
     width: 320px;
   }
 
@@ -105,7 +109,7 @@
 }
 
 @media @tablet-widths {
-  .footer {
+  .footer__wrapper {
     display: flex;
     align-items: center;
     width: 768px;
@@ -113,6 +117,7 @@
     padding: 10px 50px 0;
     box-sizing: border-box;
   }
+
   .footer__logo-wrapper {
     width: 33%;
     height: auto;
@@ -165,10 +170,8 @@
   }
 }
 
-
-
 @media @desktop-widths {
-  .footer {
+  .footer__wrapper {
     width: 1150px;
     height: 140px;
   }

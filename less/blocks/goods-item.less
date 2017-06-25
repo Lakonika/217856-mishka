@@ -1,4 +1,9 @@
 .goods-item {
+  position: relative;
+  width: 100%;
+}
+
+.goods-item__container {
   width: 260px;
   margin: auto;
   margin-top: 25px;
@@ -91,7 +96,7 @@
 }
 
 @media @tablet-widths {
-  .goods-item {
+  .goods-item__container {
     position: relative;
     width: 668px;
     min-height: 510px;
@@ -165,8 +170,8 @@
     content: "";
     position: absolute;
     bottom: -110px;
-    left: -25%;
-    width: 150%;
+    left: 0;
+    width: 100%;
     height: 20px;
     background: url("../img/bg-zigzag-line.svg") repeat-x 0 0;
     opacity: 0.7;
@@ -174,7 +179,7 @@
 }
 
 @media @desktop-widths {
-  .goods-item {
+  .goods-item__container{
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -227,7 +232,7 @@
     z-index: 0;
   }
 
-    .goods-item::after {
-      bottom: -100px;
-    }
+  .goods-item::after {
+    bottom: -100px;
+  }
 }

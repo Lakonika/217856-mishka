@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 ul {
@@ -32,6 +31,7 @@ input[type="email"] {
   font-size: 19px;
   line-height: 18px;
   color: @brd-grey;
+  outline: none;
 }
 
 input[type="tel"] {
@@ -49,6 +49,7 @@ input[type="text"]:active,
 input[type="tel"]:active,
 input[type="email"]:active {
   color: @brd-dark-grey;
+  border-bottom: 2px solid @green;
 }
 
 input[type="radio"] {
