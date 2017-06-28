@@ -30,18 +30,18 @@
     box-sizing: border-box;
     border-top: 1px solid #ececec;
     z-index: 1;
-  }
 
-  .catalog::after {
-    content: "";
-    width: 102%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    left: -1%;
-    background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
-    background-size: 100%;
-    z-index: 10;
+    &::after {
+      content: "";
+      width: 102%;
+      height: 20px;
+      position: absolute;
+      bottom: 0;
+      left: -1%;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+      background-size: 100%;
+      z-index: 10;
+    }
   }
 
   .catalog__title {
@@ -61,11 +61,11 @@
     margin: -60px auto 135px;
     padding: 0;
     padding-top: 50px;
-  }
 
-  .catalog::after {
-    width: 100%;
-    left: 0;
+    &::after {
+      width: 100%;
+      left: 0;
+    }
   }
 
   .catalog__wpapper {

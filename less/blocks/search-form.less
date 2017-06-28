@@ -15,16 +15,16 @@
   text-transform: uppercase;
   color: @light-green;
   font-weight: bold;
-}
 
-.search-form__legend::after {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  left: 60px;
-  width: 198px;
-  border: 1px solid @light-green;
-  content: "";
+  &::after {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 60px;
+    width: 198px;
+    border: 1px solid @light-green;
+    content: "";
+  }
 }
 
 .search-form__mail-legend::after {
@@ -45,17 +45,17 @@
 .search-form__color input[type="checkbox"] + label {
   position: relative;
   cursor: pointer;
-}
 
-.search-form__color input[type="checkbox"] + label::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: -2px;
-  width: 36px;
-  height: 36px;
-  background-color: white;
-  border: 2px solid black;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -2px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: 2px solid black;
+  }
 }
 
 .search-form__color input[type="checkbox"]:hover + label::before {
@@ -87,14 +87,18 @@
   height: 45px;
   border: none;
   border-bottom: 2px solid black;
-}
 
-.search-form__data:hover {
-  border-bottom: 2px solid @light-green;
-}
+  &:hover {
+    border-bottom: 2px solid @light-green;
+  }
 
-.search-form__data:focus {
-  border-bottom: 2px solid @green;
+  &:focus {
+    border-bottom: 2px solid @green;
+  }
+
+  &:active {
+    border-bottom: 2px solid @green;
+  }
 }
 
 .search-form__mail,
@@ -135,13 +139,18 @@
   border: 2px solid black;
   box-sizing: content-box;
   outline: none;
-}
-.search-form__extra textarea:hover {
-  border: 2px solid @light-green;
-}
 
-.search-form__extra textarea:active {
-  border: 2px solid @green;
+  &:hover {
+    border: 2px solid @light-green;
+  }
+
+  &:active {
+    border: 2px solid @green;
+  }
+
+  &:focus {
+    border: 2px solid @green;
+  }
 }
 
 .search-form__button {
@@ -157,15 +166,15 @@
   text-decoration: none;
   color: @brd-dark-grey;
   text-align: center;
-}
 
-.search-form__button:hover {
-  background-color: @brd-dark-grey;
-  color: white;
-}
+  &:hover {
+    background-color: @brd-dark-grey;
+    color: white;
+  }
 
-.search-form__button:active {
+  &:active {
     color: @grey;
+  }
 }
 
 @media @mobile-widths-only {
@@ -185,7 +194,7 @@
   }
 
   .search-form__type {
-      padding: 0 0 0 15px;
+    padding: 0 0 0 15px;
   }
 
   .search-form__type-wrapper {

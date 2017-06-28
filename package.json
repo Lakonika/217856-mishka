@@ -18,9 +18,7 @@
     "grunt-postcss": "^0.8.0",
     "grunt-svgmin": "^4.0.0",
     "grunt-svgstore": "^1.0.0",
-    "imagemin-mozjpeg": "^6.0.0",
-    "load-grunt-tasks": "^3.5.2",
-    "mozjpeg": "^4.1.1"
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
